@@ -1,0 +1,122 @@
+upperborder {
+    box-sizing: border-box;
+    position: fixed;
+    margin-top: auto;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: #393053;
+    border-image: url('https://cdn.discordapp.com/attachments/1093258760346140864/1093273317680615554/43a507b317e39652f541825e5be4397c.jpg') 30 fill;
+    border-width: 1%;
+    border-style: solid;
+    font-family: 'Segoe UI';
+    border-image-slice: 0% 0% 100% 0%;
+    color: #FFFFFF; 
+    font-size: 25px;
+    text-align: center;
+}
+bottomborder {
+    box-sizing: border-box;
+    position: fixed;
+    margin-top: auto;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: #393053;
+    border-image: url('https://cdn.discordapp.com/attachments/1093258760346140864/1093273317680615554/43a507b317e39652f541825e5be4397c.jpg') 30 fill;
+    border-width: 1%;
+    border-style: solid;
+    border-image-slice: 100% 0% 0% 0%;
+}
+
+/* Content Division */
+.content {
+    display: flex;
+    justify-content: center; /* Zentriert horizontal */
+    position: fixed;
+    align-items: center;
+    top: 52.5%; /* Platziert den oberen Rand des Elements in der Mitte des Bildschirms */
+    left: 50%; /* Platziert den linken Rand des Elements in der Mitte des Bildschirms */
+    transform: translate(-50%, -50%); /* Zieht das Element um die Hälfte seiner eigenen Breite und Höhe nach oben und links, um es genau in der Mitte zu positionieren */
+    width: 80%;
+    height: 1000px;
+    background: #393053;
+    border-image: url('https://cdn.discordapp.com/attachments/1093258760346140864/1093538612605366373/4ec4490e5ebd8d5c1214ab232d90ab94.gif') 30 round;
+    border-width: 1%;
+    border-style: solid;
+    border-image: url('https://cdn.discordapp.com/attachments/1093258760346140864/1093538612605366373/4ec4490e5ebd8d5c1214ab232d90ab94.gif') 30 stretch;
+    border-image-width: 3px; /* Setzt die Breite der Border auf 30px und lässt die anderen Seiten auf 0 */
+    border-image-outset: -30px; 
+}
+
+.squares {
+    display: flex;
+}
+
+#squares {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.square {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 65px;
+  margin-top: 25px;
+  background-color: #635985;
+  left: 12.5%;
+}
+
+.checkbox-container {
+  align-items: center;
+  margin-top: -5px;
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 100%;
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+  background-color: white;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  top: 25px;
+  left: 50%;
+}
+.questiontext {
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI';
+    color: white;
+    margin-top: 10px;
+}
+.verylikelytext {
+    font-weight: bold;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    font-family: 'Segoe UI';
+    color: white;
+    top: 50%;
+    margin-right: 40%;
+}
